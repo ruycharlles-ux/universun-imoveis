@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Universun Imóveis | Imóveis de Alto Padrão</title>
+  <meta name="description" content="Imóveis exclusivos de alto padrão. Encontre o imóvel dos seus sonhos com a Universun Imóveis." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <img src="logo.png" alt="Universun Imóveis" class="nav-logo-img" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#imoveis">Imóveis</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato" class="btn-nav">Falar com Corretor</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Exclusividade &amp; Sofisticação</p>
+      <h1 class="hero-title">Viva em um<br /><em>nível superior</em></h1>
+      <p class="hero-subtitle">Curadoria de imóveis de médio e alto padrão para quem valoriza o melhor que a vida oferece.</p>
+      <div class="hero-actions">
+        <a href="#imoveis" class="btn-primary">Ver Imóveis</a>
+        <a href="#contato" class="btn-ghost">Falar com Especialista</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- NÚMEROS -->
+  <section class="stats">
+    <div class="container">
+      <div class="stat-item">
+        <span class="stat-number">12+</span>
+        <span class="stat-label">Anos de experiência</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">850+</span>
+        <span class="stat-label">Imóveis negociados</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">98%</span>
+        <span class="stat-label">Clientes satisfeitos</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">R$ 2B+</span>
+        <span class="stat-label">Em transações</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMÓVEIS EM DESTAQUE -->
+  <section class="imoveis" id="imoveis">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Portfólio Exclusivo</p>
+        <h2 class="section-title">Imóveis em Destaque</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="cards-grid">
+
+        <div class="card">
+          <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80')">
+            <span class="card-badge">Novo</span>
+            <div class="card-overlay">
+              <a href="#contato" class="card-cta">Solicitar Visita</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-location">Alphaville, SP</p>
+            <h3 class="card-title">Casa de Alto Padrão com Piscina</h3>
+            <div class="card-specs">
+              <span>🛏 5 quartos</span>
+              <span>🚗 4 vagas</span>
+              <span>📐 480 m²</span>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">R$ 3.800.000</span>
+              <a href="#contato" class="card-link">Saiba mais →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-featured">
+          <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80')">
+            <span class="card-badge badge-gold">Exclusivo</span>
+            <div class="card-overlay">
+              <a href="#contato" class="card-cta">Solicitar Visita</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-location">Jardins, SP</p>
+            <h3 class="card-title">Cobertura Duplex de Luxo</h3>
+            <div class="card-specs">
+              <span>🛏 4 quartos</span>
+              <span>🚗 3 vagas</span>
+              <span>📐 320 m²</span>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">R$ 6.200.000</span>
+              <a href="#contato" class="card-link">Saiba mais →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80')">
+            <span class="card-badge badge-blue">Oportunidade</span>
+            <div class="card-overlay">
+              <a href="#contato" class="card-cta">Solicitar Visita</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-location">Morumbi, SP</p>
+            <h3 class="card-title">Apartamento Garden Moderno</h3>
+            <div class="card-specs">
+              <span>🛏 3 quartos</span>
+              <span>🚗 2 vagas</span>
+              <span>📐 195 m²</span>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">R$ 2.150.000</span>
+              <a href="#contato" class="card-link">Saiba mais →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="section-cta">
+        <a href="#contato" class="btn-primary">Ver Portfólio Completo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="container sobre-grid">
+      <div class="sobre-image">
+        <div class="sobre-img-wrap">
+          <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=700&q=80" alt="Corretor Universun" />
+          <div class="sobre-accent"></div>
+        </div>
+      </div>
+      <div class="sobre-content">
+        <p class="section-eyebrow">Nossa História</p>
+        <h2 class="section-title">Especialistas em imóveis de alto padrão</h2>
+        <div class="section-line"></div>
+        <p class="sobre-text">
+          A Universun Imóveis nasceu da paixão por conectar pessoas a lugares extraordinários. Com mais de uma década no mercado imobiliário premium, somos referência em exclusividade, atendimento personalizado e resultados consistentes.
+        </p>
+        <p class="sobre-text">
+          Nossa equipe de corretores certificados conhece profundamente cada bairro, cada empreendimento e cada oportunidade — garantindo que sua decisão seja sempre a mais inteligente.
+        </p>
+        <div class="sobre-features">
+          <div class="feature">
+            <div class="feature-icon">✦</div>
+            <div>
+              <strong>Atendimento Exclusivo</strong>
+              <p>Dedicação total ao seu perfil e necessidades</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">✦</div>
+            <div>
+              <strong>Portfólio Curado</strong>
+              <p>Seleção rigorosa dos melhores imóveis</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">✦</div>
+            <div>
+              <strong>Assessoria Completa</strong>
+              <p>Do primeiro contato ao registro em cartório</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="depoimentos">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Clientes</p>
+        <h2 class="section-title">O que dizem sobre nós</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="depo-grid">
+        <div class="depo-card">
+          <div class="depo-stars">★★★★★</div>
+          <p class="depo-text">"Processo impecável do início ao fim. O corretor encontrou exatamente o que eu precisava em menos de um mês. Atendimento cinco estrelas."</p>
+          <div class="depo-author">
+            <div class="depo-avatar">MR</div>
+            <div>
+              <strong>Marcos Rodrigues</strong>
+              <span>CEO – São Paulo, SP</span>
+            </div>
+          </div>
+        </div>
+        <div class="depo-card depo-featured">
+          <div class="depo-stars">★★★★★</div>
+          <p class="depo-text">"A Universun superou todas as expectativas. Profissionalismo, transparência e um portfólio incrível de imóveis exclusivos. Recomendo sem hesitar."</p>
+          <div class="depo-author">
+            <div class="depo-avatar">AC</div>
+            <div>
+              <strong>Ana Carolina Melo</strong>
+              <span>Empresária – Alphaville, SP</span>
+            </div>
+          </div>
+        </div>
+        <div class="depo-card">
+          <div class="depo-stars">★★★★★</div>
+          <p class="depo-text">"Investi com confiança graças à análise detalhada que recebi. A equipe é extremamente competente e discreta. Exatamente o que eu buscava."</p>
+          <div class="depo-author">
+            <div class="depo-avatar">FL</div>
+            <div>
+              <strong>Fernando Lima</strong>
+              <span>Investidor – Campinas, SP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO / FORMULÁRIO -->
+  <section class="contato" id="contato">
+    <div class="container contato-grid">
+      <div class="contato-info">
+        <p class="section-eyebrow">Fale Conosco</p>
+        <h2 class="section-title">Conecte-se com<br />nosso corretor</h2>
+        <div class="section-line"></div>
+        <p class="contato-desc">Preencha o formulário e um de nossos especialistas entrará em contato em até 2 horas úteis para entender seu perfil e apresentar as melhores opções.</p>
+        <div class="contato-dados">
+          <div class="dado">
+            <span class="dado-icon">📞</span>
+            <div>
+              <strong>Telefone / WhatsApp</strong>
+              <a href="https://wa.me/5538999643928" target="_blank">(38) 9 9964-3928</a>
+            </div>
+          </div>
+          <div class="dado">
+            <span class="dado-icon">📧</span>
+            <div>
+              <strong>E-mail</strong>
+              <a href="mailto:ruycharlles@universunimoveis.com.br">ruycharlles@universunimoveis.com.br</a>
+            </div>
+          </div>
+          <div class="dado">
+            <span class="dado-icon">📍</span>
+            <div>
+              <strong>Endereço</strong>
+              <span>Av. Paulista, 1000 – São Paulo, SP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contato-form-wrap">
+        <form class="form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome">Nome completo *</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+              <label for="telefone">WhatsApp *</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(11) 9 0000-0000" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="tipo">Tipo de imóvel</label>
+              <select id="tipo" name="tipo">
+                <option value="">Selecione...</option>
+                <option value="apartamento">Apartamento</option>
+                <option value="casa">Casa / Sobrado</option>
+                <option value="cobertura">Cobertura</option>
+                <option value="terreno">Terreno / Lote</option>
+                <option value="comercial">Comercial</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="orcamento">Faixa de investimento</label>
+              <select id="orcamento" name="orcamento">
+                <option value="">Selecione...</option>
+                <option value="500k-1m">R$ 500k – R$ 1M</option>
+                <option value="1m-2m">R$ 1M – R$ 2M</option>
+                <option value="2m-5m">R$ 2M – R$ 5M</option>
+                <option value="5m+">Acima de R$ 5M</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Conte-nos mais sobre o que busca</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Bairro desejado, metragem, características especiais..."></textarea>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="lgpd" name="lgpd" required />
+            <label for="lgpd">Concordo com a <a href="#" target="_blank">Política de Privacidade</a> e autorizo o contato.</label>
+          </div>
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <span id="btnText">Falar com Corretor</span>
+            <span id="btnLoading" style="display:none">Enviando...</span>
+          </button>
+          <div class="form-success" id="formSuccess" style="display:none">
+            ✓ Mensagem enviada! Nosso corretor entrará em contato em breve.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="logo.png" alt="Universun Imóveis" class="footer-logo-img" />
+        <p>Exclusividade ao seu alcance.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#imoveis">Imóveis</a></li>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Termos de Uso</a></li>
+          <li><a href="#">CRECI: 000000-SP</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Redes Sociais</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">Ig</a>
+          <a href="#" aria-label="LinkedIn">Li</a>
+          <a href="#" aria-label="WhatsApp">Wa</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Universun Imóveis. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+
+  <!-- SOFIA CHAT WIDGET -->
+  <button class="sofia-fab" id="sofiaFab" aria-label="Falar com Sofia">
+    <div class="sofia-fab-ring"></div>
+    <svg class="sofia-chat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+    </svg>
+    <svg class="sofia-close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+    </svg>
+  </button>
+
+  <div class="sofia-window" id="sofiaWindow" aria-hidden="true">
+    <div class="sofia-header">
+      <div class="sofia-header-info">
+        <div class="sofia-avatar">S</div>
+        <div>
+          <strong class="sofia-name">Sofia</strong>
+          <span class="sofia-status">
+            <span class="sofia-dot"></span>
+            Assistente Universun
+          </span>
+        </div>
+      </div>
+      <button class="sofia-close-btn" id="sofiaClose" aria-label="Fechar chat">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="sofia-messages" id="sofiaMessages">
+      <div class="sofia-msg sofia-msg--bot">
+        <p>Olá! Sou Sofia, assistente virtual da Universun Imóveis. Como posso ajudá-lo hoje?</p>
+      </div>
+    </div>
+
+    <div class="sofia-input-area">
+      <input type="text" class="sofia-input" id="sofiaInput" placeholder="Escreva sua mensagem..." maxlength="500" />
+      <button class="sofia-send" id="sofiaSend" aria-label="Enviar">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</body>
+</html>
