@@ -59,7 +59,7 @@ function enviarParaWhatsApp(dados) {
     `💰 *Orçamento:* ${orcamentoMap[dados.orcamento] || dados.orcamento}`,
     `📝 *Mensagem:* ${dados.mensagem || 'Não informado'}`,
     '',
-    '_Enviado pelo site universunimoveis.com.br_'
+    '_Enviado pelo site universunimoveis.com_'
   ].join('\n');
 
   const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;

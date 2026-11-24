@@ -1214,3 +1214,15 @@ a { text-decoration: none; color: inherit; }
     height: 54px;
   }
 }
+
+/* ===== PREÇO COM DESCONTO ===== */
+.selo-desconto { display:inline-block; background:#B3261E; color:#fff; font-family:var(--ff-sans); font-size:.7rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; padding:.3rem .7rem; margin-bottom:.4rem; }
+.preco-de { display:block; font-family:var(--ff-sans); font-size:.9rem; color:var(--gray-light); text-decoration:line-through; }
+.preco-por { display:block; color:var(--gold); }
+.imovel-preco { text-align:right; }
+.box-preco { font-family:var(--ff-serif); font-size:1.9rem; line-height:1.2; margin-bottom:1rem !important; }
+.box-preco .selo-desconto { font-size:.65rem; }
+.card-price .preco-de { font-size:.75rem; }
+.card-price .preco-por { font-size:inherit; }
+.card-badge.badge-red { background:#B3261E; color:#fff; }
+@media (max-width:900px){ .imovel-preco { text-align:left; } }

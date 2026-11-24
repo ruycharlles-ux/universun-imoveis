@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{TITULO}} | Universun Imóveis</title>
+  <meta name="description" content="{{TITULO}} – {{LOCAL}}. {{PRECO}}. Universun Imóveis, CRECI-MG 59388." />
+  <meta property="og:title" content="{{TITULO}} – {{PRECO}}" />
+  <meta property="og:image" content="{{FOTO1}}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="imovel.css" />
+</head>
+<body>
+  <nav class="navbar solid">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><img src="logo.png" alt="Universun Imóveis" class="nav-logo-img" /></a>
+      <ul class="nav-links">
+        <li><a href="index.html#imoveis">Imóveis</a></li>
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="{{WA}}" target="_blank" rel="noopener" class="btn-nav">Falar com Corretor</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="imovel-page">
+    <div class="container">
+      <a href="index.html#imoveis" class="voltar">← Voltar aos imóveis</a>
+      <div class="imovel-head">
+        <div>
+          <p class="eyebrow">{{LOCAL}}</p>
+          <h1>{{TITULO}}</h1>
+          <p class="codigo">{{TIPO}} · Cód. {{CODIGO}}</p>
+        </div>
+        <div class="imovel-preco">{{PRECO_HTML}}</div>
+      </div>
+
+      <div class="galeria-principal">
+        <img id="fotoPrincipal" src="{{FOTO1}}" alt="{{TITULO}}" />
+        <button class="gal-btn prev" id="galPrev" aria-label="Foto anterior">‹</button>
+        <button class="gal-btn next" id="galNext" aria-label="Próxima foto">›</button>
+        <span class="gal-contador" id="galCont"></span>
+      </div>
+      <div class="miniaturas" id="miniaturas">{{THUMBS}}</div>
+
+      <div class="imovel-corpo">
+        <div class="imovel-desc">
+          <div class="specs-grid">{{SPECS}}</div>
+          <h2>Sobre o imóvel</h2>
+          {{DESC}}
+          <ul>{{ITENS}}</ul>
+        </div>
+        <aside class="box-contato">
+          <h3>Agende sua visita</h3>
+          <p class="box-preco">{{PRECO_HTML}}</p>
+          <p>Fale direto com o corretor e receba todas as informações deste imóvel.</p>
+          <a href="{{WA}}" target="_blank" rel="noopener" class="btn-primary">Chamar no WhatsApp</a>
+          <a href="index.html#contato" class="btn-ghost">Enviar mensagem</a>
+          <small>Ruy Charlles · Corretor de Imóveis · CRECI-MG 59388</small>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>© 2026 Universun Imóveis · Montes Claros – MG · CRECI-MG 59388</p>
+    </div>
+  </footer>
+
+  <script>
+    const fotos = {{FOTOS_JSON}};
+    let atual = 0;
+    const img = document.getElementById('fotoPrincipal');
+    const cont = document.getElementById('galCont');
+    const thumbs = document.querySelectorAll('#miniaturas img');
+    function mostrar(i) {
+      atual = (i + fotos.length) % fotos.length;
+      img.src = fotos[atual];
+      cont.textContent = (atual + 1) + ' / ' + fotos.length;
+      thumbs.forEach((t, k) => t.classList.toggle('ativa', k === atual));
+    }
+    document.getElementById('galPrev').onclick = () => mostrar(atual - 1);
+    document.getElementById('galNext').onclick = () => mostrar(atual + 1);
+    thumbs.forEach(t => t.onclick = () => mostrar(+t.dataset.i));
+    document.addEventListener('keydown', e => { if (e.key === 'ArrowLeft') mostrar(atual - 1); if (e.key === 'ArrowRight') mostrar(atual + 1); });
+    mostrar(0);
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+/* ===== PÁGINA DE IMÓVEL ===== */
+.navbar.solid { background: rgba(13,13,13,0.96); border-bottom: 1px solid var(--border); }
+.imovel-page { padding: 8rem 0 5rem; }
+.voltar { display:inline-block; color: var(--gray-light); font-size:.8rem; letter-spacing:.15em; text-transform:uppercase; margin-bottom:2rem; }
+.voltar:hover { color: var(--gold); }
+.imovel-head { display:flex; justify-content:space-between; align-items:flex-end; gap:2rem; flex-wrap:wrap; margin-bottom:2rem; }
+.imovel-head .eyebrow { color: var(--gold); font-size:.75rem; letter-spacing:.3em; text-transform:uppercase; }
+.imovel-head h1 { font-family: var(--ff-serif); font-weight:400; font-size: clamp(2rem,4vw,3.2rem); line-height:1.15; }
+.imovel-head .codigo { color: var(--gray); font-size:.8rem; margin-top:.4rem; }
+.imovel-preco { font-family: var(--ff-serif); color: var(--gold); font-size: clamp(1.8rem,3vw,2.6rem); }
+.galeria-principal { position:relative; background: var(--dark-2); border:1px solid var(--border); aspect-ratio: 16/9; overflow:hidden; }
+.galeria-principal img { width:100%; height:100%; object-fit:contain; }
+.gal-btn { position:absolute; top:50%; transform:translateY(-50%); background:rgba(13,13,13,.7); color:var(--gold); border:1px solid var(--border); width:48px; height:48px; font-size:1.4rem; cursor:pointer; }
+.gal-btn.prev { left:1rem; } .gal-btn.next { right:1rem; }
+.gal-contador { position:absolute; bottom:1rem; right:1rem; background:rgba(13,13,13,.7); padding:.2rem .7rem; font-size:.75rem; color:var(--gray-light); }
+.miniaturas { display:flex; gap:.6rem; overflow-x:auto; padding:.8rem 0 0; }
+.miniaturas img { width:110px; height:75px; object-fit:cover; cursor:pointer; opacity:.5; border:1px solid transparent; flex:0 0 auto; }
+.miniaturas img.ativa, .miniaturas img:hover { opacity:1; border-color: var(--gold); }
+.imovel-corpo { display:grid; grid-template-columns: 2fr 1fr; gap:3rem; margin-top:3rem; }
+.specs-grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(140px,1fr)); gap:1rem; margin-bottom:2.5rem; }
+.spec { background: var(--dark-2); border:1px solid var(--border); padding:1.2rem; }
+.spec span { display:block; color:var(--gray-light); font-size:.7rem; letter-spacing:.15em; text-transform:uppercase; }
+.spec strong { font-family: var(--ff-serif); font-size:1.5rem; font-weight:500; color: var(--white); }
+.imovel-desc h2 { font-family: var(--ff-serif); font-weight:400; font-size:1.8rem; margin-bottom:1rem; }
+.imovel-desc p { color: var(--gray-light); margin-bottom:1rem; }
+.imovel-desc ul { list-style:none; display:grid; grid-template-columns: 1fr 1fr; gap:.5rem 1.5rem; color:var(--gray-light); }
+.imovel-desc li::before { content:'✦ '; color: var(--gold); }
+.box-contato { background: var(--dark-2); border:1px solid var(--border); padding:2rem; position:sticky; top:7rem; align-self:start; }
+.box-contato h3 { font-family: var(--ff-serif); font-weight:400; font-size:1.6rem; margin-bottom:.5rem; }
+.box-contato p { color: var(--gray-light); font-size:.9rem; margin-bottom:1.5rem; }
+.box-contato .btn-primary, .box-contato .btn-ghost { display:block; text-align:center; margin-bottom:.8rem; }
+.box-contato small { display:block; color: var(--gray); font-size:.75rem; margin-top:1rem; }
+@media (max-width: 900px) {
+  .imovel-corpo { grid-template-columns: 1fr; }
+  .box-contato { position:static; }
+  .imovel-desc ul { grid-template-columns: 1fr; }
+  .galeria-principal { aspect-ratio: 4/3; }
+}
+
+/* ===== PREÇO COM DESCONTO ===== */
+.selo-desconto { display:inline-block; background:#B3261E; color:#fff; font-family:var(--ff-sans); font-size:.7rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; padding:.3rem .7rem; margin-bottom:.4rem; }
+.preco-de { display:block; font-family:var(--ff-sans); font-size:.9rem; color:var(--gray-light); text-decoration:line-through; }
+.preco-por { display:block; color:var(--gold); }
+.imovel-preco { text-align:right; }
+.box-preco { font-family:var(--ff-serif); font-size:1.9rem; line-height:1.2; margin-bottom:1rem !important; }
+.box-preco .selo-desconto { font-size:.65rem; }
+.card-price .preco-de { font-size:.75rem; }
+.card-price .preco-por { font-size:inherit; }
+.card-badge.badge-red { background:#B3261E; color:#fff; }
+@media (max-width:900px){ .imovel-preco { text-align:left; } }
